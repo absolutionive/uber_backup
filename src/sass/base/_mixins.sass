@@ -1,0 +1,46 @@
+=button
+    &:hover
+        background: $main_color
+=plus
+    &::before
+        content: ''
+        display: block
+        width: 14px 
+        height: 2px 
+        background-color: $main_color
+        transition: 0.6s all
+    &::after 
+        content: ''
+        position: absolute 
+        left: 50%
+        transform: translateX(-50%)
+        display: block 
+        height: 14px
+        width: 2px
+        background-color: $main_color
+        transition: 0.3s all
+    &:hover
+        &::before, &::after
+            background-color: red
+=check_blue
+    &::before 
+        content: ''
+        display: block
+        position: absolute
+        left: -29px
+        top: 3px
+        left: -29px
+        width: 21px
+        height: 20px
+        background: url(../icons/require/check_blue.png) center (center / cover) no-repeat
+=check_red
+    &::before 
+        content: ''
+        display: block
+        position: absolute
+        left: -29px
+        top: 3px
+        left: -29px
+        width: 21px
+        height: 20px
+        background: url(../icons/require/check_red.png) center (center / cover) no-repeat
